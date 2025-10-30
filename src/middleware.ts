@@ -1,6 +1,8 @@
-import { auth } from "./lib/auth";
+import NextAuth from "next-auth";
+import { auth } from "./lib/auth-no-edge";
+import { nextAuthEdgeConfig } from "./lib/auth-edge";
 
-export default auth;
+export default NextAuth(nextAuthEdgeConfig).auth;
 
 // Apply middleware to all routes except for static files and API routes
 export const config = {

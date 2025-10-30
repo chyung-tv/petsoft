@@ -1,6 +1,6 @@
 import "server-only";
 import { redirect } from "next/navigation";
-import { auth } from "./auth";
+import { auth } from "./auth-no-edge";
 import prisma from "./db";
 import { Pet, User } from "@prisma/client";
 

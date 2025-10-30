@@ -1,4 +1,4 @@
-export { GET, POST } from "@/lib/auth";
+export { GET, POST } from "@/lib/auth-no-edge";
 
 // what is this file doing?
 // This file sets up NextAuth with a credentials provider,
